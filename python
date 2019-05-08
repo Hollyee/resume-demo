@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.job-wrapper {
+				width: 850px;
+				border: 1px solid black;
+				margin: 0 auto;
+			}
+
+			header {
+				display: flex;
+				width: 80%;
+				margin: 0 auto;
+				flex-direction: row;
+				justify-content: center;
+				/* border: 1px solid blue; */
+			}
+
+			.header-img {
+				width: 30%;
+				margin-top: 20px;
+			}
+
+			.header-info {
+				margin: 20px 0 0 40px;
+				/* text-align: center; */
+			}
+
+			.header-info h1 {
+				text-align: center;
+				border-bottom: 3px solid black;
+				padding-bottom: 15px;
+			}
+
+			p,
+			li,
+			span {
+				font-size: 14px;
+			}
+
+			.main-info {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				margin-top: 20px auto;
+			}
+
+			#personal-info {
+				width: 200px;
+				margin-left: 20px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+
+			#job-experience {
+				width: 550px;
+				/* border: 1px solid green; */
+				box-sizing: border-box;
+				padding: 10px;
+			}
+
+			.basic-info span{
+				border-bottom: 3px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="job-wrapper">
+			<header>
+				<div class="header-img">
+					<img src="6f84ae18.jpg" alt="个人照片" style="width:150px;border:1px solid gray;border-radius: 15px;">
+				</div>
+				<div class="header-info">
+					<h1>杨勇</h1>
+					<p>两年Python爬虫系统开发经验，熟悉Scrapy框架，作为主力工程师参与设计和开发过多个项目，负责系统核心模块的开发，自动化
+						测试与部署，熟悉HTTP协议、TCP/IP协议，正则表达式、XPATH的用法，了解Redis,MySQL数据库与Linux系统的常见机制与原理</p>
+				</div>
+			</header>
+			<div class="main-info">
+				<section id="personal-info">
+					<div class="basic-info">
+						<span id="msg">基本信息</span>
+						<div class="email">contact@jober.net</div>
+						<div class="phone">133-5555-6666</div>
+						<div class="github">github.com/Windsooon</div>
+						<div class="job-type">求职意向：爬虫工程师</div>
+						<div class="politics">政治面貌：群众</div>
+
+					</div>
+					<div class="basic-info">
+						<span>教育经历</span>
+						<p>中山大学</p>
+						<p>计算机科学|2013年-2017年</p>
+						<p>操作系统(85分/专业排名18/100),数据结构(90分/专业排名10/100)</p>
+						<p>2015-2016年获得美国大学生数学建模竞赛一等奖</p>
+					</div>
+					<div class="basic-info">
+						<span>志愿工作</span>
+						<p>协助组织翻译</p>
+						<p>Flask,Request第一版本档，翻译多篇技术文章</p>
+						<p>Github上的开源项目Cherry获得200个Star</p>
+						<p>2015-2016年获得美国大学生数学建模竞赛一等奖</p>
+					</div>
+					<div class="basic-info">
+						<ul>
+							<li>Django</li>
+							<li>Vue</li>
+							<li>Docker</li>
+							<li>Linux</li>
+							<li>团队能力</li>
+						</ul>
+					</div>
+
+				</section>
+				<section>
+					<div id="job-experience">
+						<span>工作经历</span>
+						<div class="comp-1">
+							<h3>独角兽科技有限公司(旗下产品EngineGo)</h3>
+							<div class="position">
+								<p>2014年6月-2016年6月&nbsp;|&nbsp;高级工程师</p>
+								<ul>
+									<li>作为组长负责设计和开发分布式网络爬虫系统、优化爬虫策略和防屏蔽规则，提升网页抓取的效率和质量。</li>
+									<li>根据行业需求分析设计方案可行性，对项目代码进行测试优化、协助持续集成和自动化部署，提高系统可用性</li>
+									<li>负责公司技术文档的编写与维护，定期review团队的代码，与团队共同学习以及成长</li>
+								</ul>
+							</div>
+							<div class="works">
+								<p>EngineGo爬虫系统</p>
+								<ul>
+									<li>与产品经理保持沟通，使用Scrapy框架对爬虫模块进行重构，提高200%的爬虫速度并减少服务器20%CPU负载。改进爬虫策略，降低40%被屏蔽的请求数</li>
+									<li>作为主要工程师设计以及开发物业模块、活动模块、实现报名、即时通知等十个功能</li>
+									<li>使用Docker对项目进行拆分重新架构，减少业务模块之间的资源耦合，实现持续集成与自动化部署</li>
+								</ul>
+							</div>
+						</div>
+						<div class="comp-2">
+							<h3>未来科技有限公司(旗下产品EngineGo)</h3>
+							<div class="position">
+								<p>2012年6月-2014年6月&nbsp;|&nbsp;Python工程师</p>
+								<ul>
+									<li>使用Python爬虫帮助公司进行电商数据的数据采集，文本分析与文本标注。并将就分析结果与开发人员讨论产品方向</li>
+									<li>带领3人团队完成后端系统的难点分析与架构设计工作、承担核心功能代码编写，开发与维护系统核心模块，使用selenium等工具
+										对产品进行多方面测试，保证代码的可靠、安全</li>
+									<li>负责公司技术文档的编写与维护，定期review团队的代码，与团队共同学习以及成长</li>
+								</ul>
+							</div>
+							<div class="works">
+								<p>内部后台管理系统</p>
+								<ul>
+									<li>基于Flask实现RESTful风格的后台管理系统，使用MySQL作为存储数据、配置主从热备
+										，使用Celery实现异步邮件推送</li>
+									<li>使用Redis存储定时和缓存结果，选择RabbitMQ做消息列服务，开发，测试登录注册、请假审批等7个模块</li>
+									<li>采用Python,Shell等脚本语言公司多个办公项目的自动化，大幅提高公司内部的项目效率</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</body>
+</html>
